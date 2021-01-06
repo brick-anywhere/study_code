@@ -1,14 +1,17 @@
 package study.code.dll.entity;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.io.Serializable;
 
 /**
  * @author dll
  * @date 2020-12-18 11:01
  */
+@TableName("user_info")
 public class Person implements Serializable {
 
-    private String name;
+    private String username;
     private Integer id;
     private String pwd;
 
@@ -31,18 +34,18 @@ public class Person implements Serializable {
         this.pwd = pwd;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     @Override
     public String toString() {
         return "Person{" +
-                "name='" + name + '\'' +
+                "username='" + username + '\'' +
                 ", id=" + id +
                 ", pwd='" + pwd + '\'' +
                 '}';

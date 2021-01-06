@@ -24,13 +24,13 @@ public class StudySpringUtils {
         System.out.println("empty1 = " + empty1);
 
         Person person1 = new Person();
-        person1.setName("张三");
+        person1.setUsername("张三");
         boolean empty2 = StringUtils.isEmpty(person1);
         System.out.println("empty2 = " + empty2);
         Person person2 = new Person();
         BeanUtils.copyProperties(person1, person2);
 
-        System.out.println("person2.getName() = " + person2.getName());
+        System.out.println("person2.getName() = " + person2.getUsername());
         System.out.println("person1.hashCode()" + person1.hashCode());
         System.out.println("person2.hashCode()" + person2.hashCode());
         boolean equals = person1.equals(person2);
