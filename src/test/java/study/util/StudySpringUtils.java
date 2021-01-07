@@ -3,7 +3,7 @@ package study.util;
 import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.util.StringUtils;
-import study.code.dll.entity.Person;
+import study.dll.code.entity.Person;
 
 import java.util.Properties;
 

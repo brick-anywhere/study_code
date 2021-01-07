@@ -1,4 +1,4 @@
-package study.code.dll.utils;
+package study.dll.code.utils;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

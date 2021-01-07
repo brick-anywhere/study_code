@@ -1,4 +1,4 @@
-package study.code.dll.config;
+package study.dll.code.config;
 
 
 import org.springframework.beans.factory.annotation.Value;
@@ -10,8 +10,8 @@ import org.springframework.core.env.MutablePropertySources;
 import org.springframework.core.env.PropertySource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.support.StandardServletEnvironment;
-import study.code.dll.common.LogUtil;
-import study.code.dll.utils.StudyApplicationContextUtil;
+import study.dll.code.common.LogUtil;
+import study.dll.code.utils.StudyApplicationContextUtil;
 
 /**
  * @author
@@ -27,14 +27,14 @@ public class StudyEnvironment implements Environment, CommandLineRunner {
     @Value("${spring.profiles.active}")
     public void setEnvironment(String environment) {
 
-        study.code.dll.config.StudyEnvironment.environment = environment;
+        StudyEnvironment.environment = environment;
     }
 
     private static String applicationName;
 
     @Value("${spring.application.name}")
     public void setApplicationName(String applicationName) {
-        study.code.dll.config.StudyEnvironment.applicationName = applicationName;
+        StudyEnvironment.applicationName = applicationName;
     }
 
 
@@ -61,7 +61,7 @@ public class StudyEnvironment implements Environment, CommandLineRunner {
         LogUtil.info("可用处理器连接数: ✿✿✿✿✿✿ {} ✿✿✿✿✿✿", Runtime.getRuntime().availableProcessors());
         LogUtil.info("JVM内存信息情况: ✿✿✿✿✿✿ totalMemory:{}  maxMemory:{}  freeMemory:{} ✿✿✿✿✿✿"
                 , Runtime.getRuntime().totalMemory(), Runtime.getRuntime().maxMemory(), Runtime.getRuntime().freeMemory());
-        LogUtil.info("获取到启动环境: ✿✿✿✿✿✿ {} ✿✿✿✿✿✿", study.code.dll.config.StudyEnvironment.environment);
+        LogUtil.info("获取到启动环境: ✿✿✿✿✿✿ {} ✿✿✿✿✿✿", StudyEnvironment.environment);
         LogUtil.info("获取到启动工程: ✿✿✿✿✿✿ {} ✿✿✿✿✿✿", applicationName);
         MutablePropertySources propertySources = null;
         try {

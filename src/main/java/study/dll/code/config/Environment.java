@@ -1,4 +1,4 @@
-package study.code.dll.config;
+package study.dll.code.config;
 
 /**
  * @author

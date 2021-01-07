@@ -1,4 +1,4 @@
-package study.code.dll.entity;
+package study.dll.code.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 

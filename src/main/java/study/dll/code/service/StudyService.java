@@ -1,6 +1,6 @@
-package study.code.dll.service;
+package study.dll.code.service;
 import com.baomidou.mybatisplus.extension.service.IService;
-import study.code.dll.entity.Person;
+import study.dll.code.entity.Person;
 
 public interface StudyService extends IService<Person> {
 

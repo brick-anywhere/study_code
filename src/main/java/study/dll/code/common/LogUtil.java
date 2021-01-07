@@ -1,4 +1,4 @@
-package study.code.dll.common;
+package study.dll.code.common;
 
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
