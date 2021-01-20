@@ -1,0 +1,20 @@
+server:
+  port: 8098
+
+
+
+spring:
+  application:
+    name: conditional-web
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: ${zledu.nacos.server-addr}
+#        file-extension: yml
+#        shared-dataids: common.yml
+#        refreshable-dataids: common.yml
+#      discovery:
+#        server-addr: ${zledu.nacos.server-addr}
+#nacos:
+#  config:
+#    server-addr: ${zledu.nacos.server-addr}
