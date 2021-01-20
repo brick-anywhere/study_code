@@ -9,7 +9,7 @@
     <springProperty name="ServerIP" scope="context" source="spring.cloud.client.ip-address" defaultValue="0.0.0.0"/>
     <springProperty name="ServerPort" scope="context" source="server.port" defaultValue="0000"/>
     <springProperty name="level" scope="context" source="logging.level" defaultValue="info"/>
-    <springProperty name="sql" scope="context" source="logging.sql" defaultValue="com.dll.code.mapper"/>
+    <springProperty name="sql" scope="context" source="logging.sql" defaultValue="com.dll.mapper"/>
 
     <!-- 彩色日志 -->
     <!-- 彩色日志依赖的渲染类 -->
