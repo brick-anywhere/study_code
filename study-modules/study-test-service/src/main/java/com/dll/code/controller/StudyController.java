@@ -1,10 +1,10 @@
 package com.dll.code.controller;
 
+import com.dll.common.model.ResultData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.dll.code.common.ResultData;
 import com.dll.code.service.StudyService;
 
 @RestController
@@ -32,14 +32,6 @@ public class StudyController {
         }
     }
 
-    @GetMapping("/show3")
-    public ResultData<?> show3() {
-        try {
-            return ResultData.ok(studyService.getShow3());
-        } catch (Exception e) {
-            e.printStackTrace();
-            return ResultData.failed(e.getMessage());
-        }
-    }
+
 
 }

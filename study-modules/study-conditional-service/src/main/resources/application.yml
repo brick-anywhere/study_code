@@ -6,14 +6,14 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 logging:
   level:
-    com.dll.code: debug
+    com.dll.conditional: debug
 #    com.zledu.race: debug
 
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/*Mapper.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: com.dll.code.entity
+  typeAliasesPackage: com.dll.conditional.entity
   global-config:
     db-config:
       id-type: INPUT

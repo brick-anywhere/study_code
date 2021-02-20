@@ -1,4 +1,4 @@
-package com.dll.code.common;
+package com.dll.common.model;
 
 
 import com.alibaba.fastjson.annotation.JSONType;
@@ -18,7 +18,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @JSONType(orders = {"code", "message", "data"})
 public class ResultData<T> implements Serializable {
-
 
     private String code;
     private String msg;

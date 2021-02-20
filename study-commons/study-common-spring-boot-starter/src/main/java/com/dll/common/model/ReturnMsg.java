@@ -1,4 +1,4 @@
-package com.dll.code.common;
+package com.dll.common.model;
 
 /**
  * @author
