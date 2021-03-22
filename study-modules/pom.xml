@@ -16,6 +16,7 @@
     <modules>
         <module>study-test-service</module>
         <module>study-conditional-service</module>
+        <module>study-design-service</module>
     </modules>
 
 
