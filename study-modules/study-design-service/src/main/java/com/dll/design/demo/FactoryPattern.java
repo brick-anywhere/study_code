@@ -17,7 +17,7 @@ public class FactoryPattern {
         //获取 Circle 的对象，并调用它的 draw 方法
         Shape shape1 = shapeFactory.getShape("CIRCLE");
 
-        //调用 Circle 的 draw 方法
+        //调用 Circle  的 draw 方法
         shape1.draw();
 
         //获取 Rectangle 的对象，并调用它的 draw 方法
