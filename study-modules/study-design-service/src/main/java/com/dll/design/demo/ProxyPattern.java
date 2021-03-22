@@ -2,7 +2,6 @@ package com.dll.design.demo;
 
 import com.dll.design.service.WaiterService;
 import com.dll.design.service.impl.ManWaiterServiceImpl;
-import com.sun.deploy.util.Waiter;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.cglib.proxy.InvocationHandler;
