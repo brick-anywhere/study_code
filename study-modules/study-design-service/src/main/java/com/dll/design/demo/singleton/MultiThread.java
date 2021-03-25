@@ -1,29 +1,21 @@
 package com.dll.design.demo.singleton;
 
+import com.dll.design.entity.SingleObject;
+
 /**
  * @author dll
  * @date 2021-03-23 16:02
  */
-public class MultiThread implements Runnable{
+public class MultiThread implements Runnable {
     public MultiThread() {
 
     }
 
-    private String name;
-
-    public MultiThread(String name) {
-
-        this.name = name;
-
-    }
 
     public void run() {
 
-        for (int i = 0; i < 100; i++) {
-
-            System.out.println(name + "运行     " + i);
-
-        }
+//        System.out.println("当前线程名称=" + Thread.currentThread().getName() + "     " + "hashcode" + SingleObject.getInstance().hashCode());
+        System.out.println("当前线程名称=" + Thread.currentThread() + "     " + "hashcode" + Singleton01.getInstance().hashCode());
 
     }
 
