@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = "com.dll.*")
 @MapperScan(basePackages = "com.dll.code.mapper")
+
 public class DesignApplication {
     public static void main(String[] args) {
         SpringApplication.run(DesignApplication.class, args);
