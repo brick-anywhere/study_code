@@ -1,0 +1,38 @@
+package com.dll.design.demo;
+
+import com.dll.design.demo.prototypepattern.Shape;
+import com.dll.design.demo.prototypepattern.ShapeCache;
+import org.junit.jupiter.api.Test;
+
+/**
+ * 原型模式
+ * <p>
+ * 原型模式（Prototype Pattern）是用于创建重复的对象，同时又能保证性能。这种类型的设计模式属于创建型模式，它提供了一种创建对象的最佳方式。
+ * 这种模式是实现了一个原型接口，该接口用于创建当前对象的克隆。当直接创建对象的代价比较大时，则采用这种模式。
+ * 例如，一个对象需要在一个高代价的数据库操作之后被创建。我们可以缓存该对象，
+ * 在下一个请求时返回它的克隆，在需要的时候更新数据库，以此来减少数据库调用。
+ *
+ * @author dll
+ * @date 2021-05-10 14:54
+ */
+public class PrototypePattern {
+    @Test
+    public void fun1() {
+        ShapeCache.loadCache();
+
+        Shape clonedShape = (Shape) ShapeCache.getShape("1");
+        System.out.println("Shape : " + clonedShape.getType());
+
+        Shape clonedShape2 = (Shape) ShapeCache.getShape("2");
+        System.out.println("Shape : " + clonedShape2.getType());
+
+        Shape clonedShape3 = (Shape) ShapeCache.getShape("3");
+        System.out.println("Shape : " + clonedShape3.getType());
+    }
+
+    @Test
+    public void fun2() {
+        String str[] = {"L", "X", "E", "J", "X", "I", "A", "N"};
+
+    }
+}
