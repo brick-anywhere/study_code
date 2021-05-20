@@ -40,6 +40,9 @@ import org.junit.jupiter.api.Test;
  * 注意事项：
  *      1、和适配器模式的区别：适配器模式主要改变所考虑对象的接口，而代理模式不能改变所代理类的接口。
  *      2、和装饰器模式的区别：装饰器模式为了增强功能，而代理模式是为了加以控制
+ *实现：
+ *    我们将创建一个 Image 接口和实现了 Image 接口的实体类。ProxyImage 是一个代理类，减少 RealImage 对象加载的内存占用。
+ *     ProxyPatternDemo 类使用 ProxyImage 来获取要加载的 Image 对象，并按照需求进行显示。
  * @author dll
  * @date 2021-05-20 15:14
  */
