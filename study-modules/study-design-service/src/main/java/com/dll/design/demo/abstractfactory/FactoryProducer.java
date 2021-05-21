@@ -1,9 +1,5 @@
 package com.dll.design.demo.abstractfactory;
 
-import com.dll.design.demo.abstractfactory.AbstractFactory;
-import com.dll.design.demo.abstractfactory.ColorFactory;
-import com.dll.design.demo.abstractfactory.ShapeFactory;
-
 /**
  * 创建一个工厂创造器/生成器类，通过传递形状或颜色信息来获取工厂。
  * @author dll

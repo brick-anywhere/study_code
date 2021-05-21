@@ -1,7 +1,5 @@
 package com.dll.design.demo.singleton;
 
-import com.dll.design.entity.SingleObject;
-
 /**
  * @author dll
  * @date 2021-03-23 16:02

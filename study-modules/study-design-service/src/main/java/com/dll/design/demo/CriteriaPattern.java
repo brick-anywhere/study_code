@@ -1,8 +1,6 @@
 package com.dll.design.demo;
 
 import com.dll.design.demo.criteriapattern.*;
-import com.dll.design.demo.prototypepattern.Shape;
-import com.dll.design.demo.prototypepattern.ShapeCache;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

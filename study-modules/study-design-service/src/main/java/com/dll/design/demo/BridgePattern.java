@@ -4,8 +4,6 @@ import com.dll.design.demo.bridgepattern.Circle;
 import com.dll.design.demo.bridgepattern.GreenCircle;
 import com.dll.design.demo.bridgepattern.RedCircle;
 import com.dll.design.demo.bridgepattern.Shape;
-import com.dll.design.demo.builderpattern.Meal;
-import com.dll.design.demo.builderpattern.MealBuilder;
 import org.junit.jupiter.api.Test;
 
 /**

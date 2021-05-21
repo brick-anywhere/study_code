@@ -1,6 +1,6 @@
 package com.dll.design.demo;
 
-import com.dll.design.demo.flyweightpattern.*;
+import com.dll.design.demo.flyweightpattern.Circle;
 import com.dll.design.demo.flyweightpattern.ShapeFactory;
 import org.junit.jupiter.api.Test;
 

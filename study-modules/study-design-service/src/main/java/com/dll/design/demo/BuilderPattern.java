@@ -2,11 +2,7 @@ package com.dll.design.demo;
 
 import com.dll.design.demo.builderpattern.Meal;
 import com.dll.design.demo.builderpattern.MealBuilder;
-import com.dll.design.service.WaiterService;
-import com.dll.design.service.impl.ManWaiterServiceImpl;
 import org.junit.jupiter.api.Test;
-import org.springframework.cglib.proxy.InvocationHandler;
-import org.springframework.cglib.proxy.Proxy;
 
 /**
  * 建造者  模式
